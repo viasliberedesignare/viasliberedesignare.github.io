@@ -85,8 +85,9 @@
   --duration-slower: 1.2s;
 
   /* Z-index */
-  --z-cursor: 9999;
+  --z-cursor: 10001;
   --z-loader: 9998;
+  --z-modal: 9999;
   --z-nav: 100;
   --z-mobile-menu: 90;
 }
