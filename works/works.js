@@ -134,7 +134,7 @@ async function initWorksPage() {
     let cardHTML = renderWorkCard(work, isLargePattern);
     
     // In works/index.html we shouldn't have nested base path if it's already there, but renderWorkCard prepends BASE.
-    // That's fine since we're in /ViasLibereDesignare/works/. BASE is /ViasLibereDesignare/. So /ViasLibereDesignare/works/detail.html is correct.
+    // That's fine since we're in /works/. BASE is /. So /works/detail.html is correct.
     
     html += cardHTML;
   });
