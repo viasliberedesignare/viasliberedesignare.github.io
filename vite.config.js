@@ -19,7 +19,7 @@ function worksIndexPlugin() {
 }
 
 export default defineConfig({
-  base: '/ViasLibereDesignare/',
+  base: '/',
   plugins: [worksIndexPlugin()],
   build: {
     rollupOptions: {

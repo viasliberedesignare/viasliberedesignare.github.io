@@ -33,7 +33,7 @@ async function initDetail() {
   const ogDesc = document.querySelector('meta[property="og:description"]');
   if (ogDesc) ogDesc.setAttribute("content", descText);
 
-  const currentUrl = `https://saruta-portfolio.github.io/ViasLibereDesignare/works/detail.html?id=${work.id}`;
+  const currentUrl = `https://viasliberedesignare.github.io/works/detail.html?id=${work.id}`;
   const ogUrl = document.querySelector('meta[property="og:url"]');
   if (ogUrl) ogUrl.setAttribute("content", currentUrl);
 
@@ -43,10 +43,10 @@ async function initDetail() {
   const ogThumbPath = work.thumbnail && work.thumbnail.startsWith("/")
     ? work.thumbnail.slice(1)
     : work.thumbnail;
-  
+
   if (ogThumbPath) {
     const ogImage = document.querySelector('meta[property="og:image"]');
-    if (ogImage) ogImage.setAttribute("content", `https://saruta-portfolio.github.io/ViasLibereDesignare/${ogThumbPath}`);
+    if (ogImage) ogImage.setAttribute("content", `https://viasliberedesignare.github.io/${ogThumbPath}`);
   }
 
   // Hero
